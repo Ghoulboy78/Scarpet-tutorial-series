@@ -1,4 +1,6 @@
 # Lesson 1 - Show bees count
+### Script: [Show bees count](https://github.com/gnembon/scarpet/blob/master/programs/survival/show_bees_count.sc)
+
 
 ***Foreword:***
 
@@ -13,7 +15,7 @@ For the purposes of demonstration, some minor details have been tweaked, and at 
 \
 \
 \
-The first script that will be analysed for this series is `show_bees_count.sc`, byt Crec0.
+The first script that will be analysed for this series is `show_bees_count.sc`, by Crec0.
 When this script is loaded, a player right-clicking on a beehive or a bee nest with an empty hand will receive a message telling them how many bees are currently contained in the block.
 This is an incredibly simple script, which uses a basic scarpet event in order to give the player information about the world.
 
