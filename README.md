@@ -1,7 +1,7 @@
 # Scarpet tutorial series
 This is a repository of scarpet tutorial lessons, which will consist of small videos accompanied by text documents in this repository.
 
-***Disclaimer**: Note that links to scripts in this file point to the current versions of the scripts in the scarpet app store, but links within the lesson documents point to the local copies of the script here.*
+***Disclaimer**: Note that links to scripts in README.md point to the current versions of the scripts in the scarpet app store, but script links within the lesson documents point to the local copies of the script in this repository.*
 *This is because the scripts have been modified for ease of comprehension, explanation, or in order to fix minor bugs present at the time of writing/recording.*
 
 Below is a small summary of each lesson:
