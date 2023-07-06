@@ -1,5 +1,5 @@
 # Lesson 1 - Show bees count
-### Script: [Show bees count](https://github.com/gnembon/scarpet/blob/master/programs/survival/show_bees_count.sc)
+### Script: [Show bees count](https://github.com/Ghoulboy78/Scarpet-tutorial-series/blob/main/Lesson%201%20-%20Show%20Bees%20Count/lesson_1_show_bees_count.sc)
 
 
 ***Foreword:***
@@ -92,7 +92,9 @@ In this case, using `player` as the first argument means that only the player wh
 
 The second argument of the `print()` function is a `str()` function.
 The `str()` function can be used to convert any variable into a string form (so `str(3.56)` returns `'3.56'` and `str(3.56e4)` returns `'3560.0'`).
-In this case, with multiple variables, it treats the first argument, `'%s at %s contains %d bees'` as a formatted string, and replaces the `%s` and `%d` with the string values of the subsequent variables, in this case `title(block)` (which returns the proper name of the block instead of its block id), `pos(block)` (which returns the coordinates of the block), and `num_bees`. More information on formatted strings can be found in the Extra Materials secion below.
+In this case, with multiple variables, it treats the first argument, `'%s at %s contains %d bees'` as a formatted string, and replaces the `%s` and `%d` with the string values of the subsequent variables, in this case `title(block)`
+(which returns the proper name of the block instead of its block id), `pos(block)` (which returns the coordinates of the block), and `num_bees`.
+More information on formatted strings can be found in the Extra Materials secion below.
 
 ## Conclusion
 Thank you for reading this exposition of how a simple scarpet app, with practiical survival applications, works.
@@ -100,5 +102,5 @@ The next lessons are intended to further explore the possibilities of what event
 
 ## Extra materials:
  - Video link: 
- - Formatted strings: 
+ - Formatted strings: [Python String Formatting](https://www.learnpython.org/en/String_Formatting)
 
