@@ -4,7 +4,7 @@ This is a repository of scarpet tutorial lessons, which will consist of small vi
 Below is a small summary of each lesson:
 
 
-## Lesson 1 - [Show bees count](https://github.com/gnembon/scarpet/blob/master/programs/survival/show_bees_count.sc)
+## [Lesson 1](Lesson%201%20-%20Show%20Bees%20Count/lesson_1_show_bees_count.md) - [Show bees count](https://github.com/gnembon/scarpet/blob/master/programs/survival/show_bees_count.sc)
 Simple player event for info display
 
 ## Lesson 2 - [Revive corals](https://github.com/gnembon/scarpet/blob/master/programs/survival/revive_coral.sc)
