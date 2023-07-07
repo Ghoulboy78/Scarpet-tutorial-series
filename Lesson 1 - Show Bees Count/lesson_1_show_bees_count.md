@@ -1,5 +1,5 @@
 # Lesson 1 - Show bees count
-### Script: [Show bees count](https://github.com/Ghoulboy78/Scarpet-tutorial-series/blob/main/Lesson%201%20-%20Show%20Bees%20Count/lesson_1_show_bees_count.sc)
+### Script: [Show bees count](lesson_1_show_bees_count.sc)
 
 
 ***Foreword:***

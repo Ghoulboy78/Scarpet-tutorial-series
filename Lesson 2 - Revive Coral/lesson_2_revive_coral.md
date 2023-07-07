@@ -1,5 +1,5 @@
 # Lesson 2 - Revive corals
-### Script: [Revive corals](https://github.com/gnembon/scarpet/blob/master/programs/survival/revive_coral.sc)
+### Script: [Revive corals](lesson_2_revive_coral.sc)
 
 
 In this tutorial lesson, we will look at the `revive_coral.sc` script by Ghoulboy.
