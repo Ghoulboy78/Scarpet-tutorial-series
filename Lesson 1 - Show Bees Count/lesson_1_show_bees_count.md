@@ -1,7 +1,7 @@
 # Lesson 1 - Show bees count
 ### Script: [Show bees count](lesson_1_show_bees_count.sc)
 
-
+\
 ***Foreword:***
 
 *Welcome to the first scarpet tutorial lesson.
@@ -11,7 +11,10 @@ Some more complicated programming operations will be explained if and when neede
 *Scarpet is a simple language, meaning anyone with a basic background in programming in Python, Javascript, Java, etc. should find it intuitive, but it should be easy to follow along even for those who know little about programming in general.*
 
 *Please note that not all the scripts used in this series are exactly as they are in the scarpet app store.
-For the purposes of demonstration, some minor details have been tweaked, and at times complexity removed in order to facilitate explanation and/or fix minor issues present in the scripts at time of writing/recording.*\
+For the purposes of demonstration, some minor details have been tweaked, and at times complexity removed in order to facilitate explanation and/or fix minor issues present in the scripts at time of writing/recording.*
+
+*Line references in these lessons refer to the copies of the scripts in this repository, which can be accessed by navigating, or by clicking the link at the top of each lesson.
+It is encouraged for readers to read the script along with each lesson, and preferably have Minecraft open as well in order to experiment with their own modifications.*
 \
 \
 \
