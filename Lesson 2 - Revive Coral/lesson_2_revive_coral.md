@@ -14,7 +14,7 @@ The arguments of this event are also the same as in the previous lesson: `player
 The script itself is very simple, consisting of just the one event declaration.
 In it, there is an `if` statement, which checks for the conditions of a water bottle right-clicking on a dead coral block.
 
-## `if` statement
+### `if` statement
 The condition of the `if` statement consists of 3 parts. The first, `item_tuple:0=='potion'`, checks if the item is a potion item, since all potions (including water bottles) have the id `potion`.
 
 The second condition checks whether or not the block being targetted is a dead coral.
@@ -28,7 +28,7 @@ The third condition, `item_tuple:2:'Potion' == 'minecraft:water'`, checks whethe
 This is done by checking the nbt of the item, which is the third item in the `item_tuple` list.
 Accessing the nbt via `item_tuple:2`, we then look further within the nbt at the `'Potion` tag, which is used to store the type of potion, and check to see if it is `minecraft:water`.
 
-## Reving the coral
+### Reviving the coral
 
 Once the conditions have been met, and we have confirmed that the player has right-clicked on a dead coral with a water bottle, we can begin the task of reviving that coral.
 
@@ -53,23 +53,27 @@ If not, and if the player right-clicked with a water bottle from the offhand, th
 The third argument to the `inventory_set()` function is the count of the items to be placed, in this case 1, since we want to place a single empty bottle in that slot.
 The last argument is the id of the item to be placed in the slot, in this case `glass_bottle`.
 
-**NB: in calls to `inventory_set`, as well as with certain other functions in scarpet, the `'minecraft:'` prefix is not required in front of item and block ids. Check what is required by your function before using. Modded items and blocks always need their prefixes in front of them, however.**
+**NB: in calls to `inventory_set`, as well as with certain other functions in scarpet, the `'minecraft:'` prefix is not required in front of item and block ids.**
+**Check what is required by your function before using.**
+**Modded items and blocks always need their prefixes in front of them, however.**
 
-## Correcting for vanilla behaviour
+### Correcting for vanilla behaviour
 
 Once we have set the empty glass bottle, it might seem like it is over, but unfortunately not yet.
 Now that we have depleted the water bottle  set the revived coral block in its position using the `set()` function, the newly placed block will not be updated properly.
 This is because coral blocks do not die as a result of random ticks, but as a result of block ticks scheduled on themselves randomly.
 These block ticks are scheduled every 60-100 ticks, and check whether or not the block is surrounded by water, in which case it dies, and if it is alive, it schedules another block tick 60-100 ticks in the future.
+
 In order to re-enable this behaviour, we have line 21, which uses a call to the `schedule()` function: `schedule(60+rand(40), _(outer(position)) -> block_tick(position))`.
 This is a function which takes as its first argument a delay in ticks, which in this case is `60 + rand(40)`.
 `rand(40)` is a function which returns a random number (a double, not an integer) evenly distributed between 0 and its argument, in this case 40.
 It can be used with more argument, for that see the function in the scarpet docs.
 When used in `schedule()` however, any trailing decimals are ignored, so `60 + rand(40)` is interpreted as an integer.
 
-The second argument to `schedule()` is either the name of a function to be called after the delay, or in this case, a lambda function with no arguments.
+The second argument to `schedule()` is either the name of a function to be called after the delay, or in this case, a lambda, or anonymous function with no arguments.
 This is done so that the function itself becomes a variable which can be called separately later on, after the specified delay, and allowing the game to progress as usual.
-More information on lambda functions can be found in the Extra Materials section below.
+More information on lambda/anonymous functions can be found in the Extra Materials section below.
+More information on the `schedule()` function can be found in the scarpet docs.
 
 The lambda function itself is simple: `_(outer(position)) -> block_tick(position)`.
 Although it may seem that this lambda function does, in fact, have an argument, the `outer()` function simply takes the `position` variable declared earlier on in line 7, and makes it accessible within the lambda function.
@@ -93,5 +97,5 @@ With blocks, this can usually be acheived with a well-timed block tick, such as 
 ## Extra Materials:
  - Video link: 
  - Regular expressions: 
- - Lambda functions: 
+ - Lambda/Anonymous functions: 
  - Function and variable scopes: 
